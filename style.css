@@ -13,4 +13,121 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+}
+
+main {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 1em;
+}
+
+nav {
+    width: 16rem;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    color: var(--text-color);
+    gap: 5px 0;
+    visibility: unset;
+}
+
+nav > div {
+    padding: 1em;
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    gap: 0 12px;
+    border-radius: 15px;
+}
+
+nav > div:not(:first-child):hover {
+    background-color: var(--light-grey);
+}
+
+nav > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+nav > div:nth-child(2) > img {
+    position: absolute;
+}
+
+nav > div:nth-child(2) {
+    background-color: var(--light-grey);
+    margin-top: 15px;
+}
+
+nav > div:last-child {
+    background-color: var(--light-green);
+    width: 100%;
+    margin: auto 0 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: unset;
+}
+
+nav > div:last-child > img:first-child {
+    border-radius: 8px;
+    width: 40px;
+    height: auto;
+}
+
+nav > div:last-child > img:last-child {
+    cursor: pointer;
+}
+
+nav > div:last-child > div > p:last-child {
+    font-size: .75em;
+}
+
+nav > div:last-child > div {
+    margin-left: -40px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: inherit;
+    padding-left: 35px;
+}
+
+input:focus-within {
+    border: none;
+    outline: none;
+}
+
+/* menu hide */
+
+.hide {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.shrink {
+    width: 5.5rem;
+    transition: width 1s;
+}
+
+.logo-hide {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+/* nav > div > img:first-child {
+    opacity: 0;
+    transition: opacity 1s;
+} */
 
