@@ -10,8 +10,8 @@ toggleButton.addEventListener('click', () => {
     elems[i].classList.toggle('hide');
     }
 
-    logoImg.toggle('logo-hide');
-    nav.toggle('shrink');
-
+    logoImg.classList.toggle('logo-hide');
+    nav.classList.toggle('shrink');
+    toggleButton.classList.toggle('toggle-pos');
     
 });
