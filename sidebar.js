@@ -3,7 +3,6 @@ const logoImg = document.getElementById('logoImg');
 const nav = document.getElementById('nav');
 
 toggleButton.addEventListener('click', () => {
-    console.log('legal');
 
     var elems = document.getElementsByClassName('toHide');
     for (var i=0;i<elems.length;i+=1){

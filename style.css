@@ -48,6 +48,13 @@ nav > div {
     border-radius: 15px;
 }
 
+#logoImg {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .2s, visibility .25s, height .1;
+}
+
 nav > div:not(:first-child):not(:last-child):hover {
     background-color: var(--light-grey);
 }
@@ -128,9 +135,10 @@ input:focus-within {
 }
 
 .logo-hide {
-    opacity: 0;
-    visibility: collapse;
-    transition: opacity .2s, visibility .25s;
+    opacity: 0 !important;
+    visibility: collapse !important;
+    height: 0 !important;
+    transition: opacity .2s, visibility .25s, height 0 .3 !important;
 }
 
 .toggle-pos {
